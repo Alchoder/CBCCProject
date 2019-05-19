@@ -1,0 +1,66 @@
+﻿@model CBCCProject.Entities.Job
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CityId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JobImage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JobImage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedBY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedBY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDateTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedBY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedBY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDateTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.JobID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
